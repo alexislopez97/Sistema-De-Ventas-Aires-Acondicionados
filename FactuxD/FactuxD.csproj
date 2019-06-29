@@ -35,6 +35,7 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Azure.ResourceManager, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -209,6 +210,7 @@
     <Compile Include="Promociones.Designer.cs">
       <DependentUpon>Promociones.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.cs" />
     <Compile Include="Reporte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -409,7 +411,6 @@
     <None Include="Resources\boton-actualizar.png" />
     <None Include="Resources\basura.png" />
     <None Include="Resources\basura %281%29.png" />
-    <None Include="Resources\usuario1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

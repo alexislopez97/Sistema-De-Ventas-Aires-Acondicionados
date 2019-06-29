@@ -79,7 +79,6 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::FactuxD.Properties.Resources.search;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(406, 68);
             this.button3.Name = "button3";
@@ -93,10 +92,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::FactuxD.Properties.Resources.printer;
             this.button2.Location = new System.Drawing.Point(254, 375);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 32);
+            this.button2.Size = new System.Drawing.Size(10, 10);
             this.button2.TabIndex = 2;
             this.button2.Text = "  Imprimir";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -107,7 +105,6 @@
             // BtnSeleccionar
             // 
             this.BtnSeleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSeleccionar.Image = global::FactuxD.Properties.Resources.add_selection_cursor;
             this.BtnSeleccionar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSeleccionar.Location = new System.Drawing.Point(83, 375);
             this.BtnSeleccionar.Name = "BtnSeleccionar";

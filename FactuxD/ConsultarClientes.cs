@@ -30,7 +30,7 @@ namespace FactuxD
                 try
                 {
                     DataSet ds;
-                    string cmd = "Select * FROM cliente where Nom_cli LIKE ('%" + textBox1.Text.Trim() + "%')";
+                    string cmd = "Select * FROM cliente where Nom_cliente LIKE ('%" + textBox1.Text.Trim() + "%')";
 
                     ds = Utilidades.Ejecutar(cmd);
 

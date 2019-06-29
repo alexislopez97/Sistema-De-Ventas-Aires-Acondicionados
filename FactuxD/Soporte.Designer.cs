@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Soporte));
             this.lblNomAdm = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCliente = new MiLibreria.ErrorTxtBox();
             this.txtCodigoCli = new MiLibreria.ErrorTxtBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnTecnico = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -99,35 +99,21 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::FactuxD.Properties.Resources.rubbish;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(636, 316);
+            this.button4.Location = new System.Drawing.Point(642, 269);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(126, 30);
             this.button4.TabIndex = 70;
-            this.button4.Text = "  Eliminar";
+            this.button4.Text = "Finalizar";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::FactuxD.Properties.Resources.boton_actualizar;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(636, 270);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 30);
-            this.button3.TabIndex = 69;
-            this.button3.Text = "Seleccionar";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::FactuxD.Properties.Resources.eraser;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(465, 211);
             this.button2.Name = "button2";
@@ -141,7 +127,7 @@
             // btnTecnico
             // 
             this.btnTecnico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTecnico.Image = global::FactuxD.Properties.Resources.avatar__1_;
+            this.btnTecnico.Image = ((System.Drawing.Image)(resources.GetObject("btnTecnico.Image")));
             this.btnTecnico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTecnico.Location = new System.Drawing.Point(356, 120);
             this.btnTecnico.Name = "btnTecnico";
@@ -155,7 +141,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Image = global::FactuxD.Properties.Resources.save_disk;
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(356, 211);
             this.btnGuardar.Name = "btnGuardar";
@@ -268,7 +254,7 @@
             // btnCliente
             // 
             this.btnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCliente.Image = global::FactuxD.Properties.Resources.users_negro;
+            this.btnCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnCliente.Image")));
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCliente.Location = new System.Drawing.Point(235, 52);
             this.btnCliente.Name = "btnCliente";
@@ -386,7 +372,6 @@
             this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.txtCodigoCli);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnTecnico);
             this.Controls.Add(this.btnGuardar);
@@ -416,7 +401,6 @@
         private MiLibreria.ErrorTxtBox txtCliente;
         private MiLibreria.ErrorTxtBox txtCodigoCli;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnTecnico;
         private System.Windows.Forms.Button btnGuardar;

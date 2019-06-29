@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnManOpe = new System.Windows.Forms.Button();
@@ -43,7 +45,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNomAdm = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
@@ -80,9 +81,27 @@
             this.panel2.TabIndex = 9;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(5, 499);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 68);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "   Soporte";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
+            // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::FactuxD.Properties.Resources.logo;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(14, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(134, 105);
@@ -96,7 +115,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::FactuxD.Properties.Resources.discount;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(4, 130);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
@@ -114,7 +133,7 @@
             this.btnManOpe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManOpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManOpe.ForeColor = System.Drawing.Color.White;
-            this.btnManOpe.Image = global::FactuxD.Properties.Resources.automobile_with_wrench;
+            this.btnManOpe.Image = ((System.Drawing.Image)(resources.GetObject("btnManOpe.Image")));
             this.btnManOpe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnManOpe.Location = new System.Drawing.Point(4, 434);
             this.btnManOpe.Margin = new System.Windows.Forms.Padding(4);
@@ -132,7 +151,7 @@
             this.btnCliCon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCliCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliCon.ForeColor = System.Drawing.Color.White;
-            this.btnCliCon.Image = global::FactuxD.Properties.Resources.users;
+            this.btnCliCon.Image = ((System.Drawing.Image)(resources.GetObject("btnCliCon.Image")));
             this.btnCliCon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCliCon.Location = new System.Drawing.Point(4, 206);
             this.btnCliCon.Margin = new System.Windows.Forms.Padding(4);
@@ -150,7 +169,7 @@
             this.btnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacturas.ForeColor = System.Drawing.Color.White;
-            this.btnFacturas.Image = global::FactuxD.Properties.Resources.invoice;
+            this.btnFacturas.Image = ((System.Drawing.Image)(resources.GetObject("btnFacturas.Image")));
             this.btnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFacturas.Location = new System.Drawing.Point(4, 358);
             this.btnFacturas.Margin = new System.Windows.Forms.Padding(4);
@@ -168,7 +187,7 @@
             this.btnProCon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProCon.ForeColor = System.Drawing.Color.White;
-            this.btnProCon.Image = global::FactuxD.Properties.Resources.air_conditioner;
+            this.btnProCon.Image = ((System.Drawing.Image)(resources.GetObject("btnProCon.Image")));
             this.btnProCon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProCon.Location = new System.Drawing.Point(4, 282);
             this.btnProCon.Margin = new System.Windows.Forms.Padding(4);
@@ -215,7 +234,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::FactuxD.Properties.Resources.remove;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(730, 7);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(29, 27);
@@ -225,7 +244,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::FactuxD.Properties.Resources.cancel;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(768, 7);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(29, 27);
@@ -235,7 +254,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::FactuxD.Properties.Resources.avatar__1_;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(77, 19);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(29, 27);
@@ -251,24 +270,6 @@
             this.lblNomAdm.TabIndex = 0;
             this.lblNomAdm.Text = "label1";
             this.lblNomAdm.Click += new System.EventHandler(this.lblNomAdm_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::FactuxD.Properties.Resources.automobile_with_wrench;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(5, 499);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 68);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "   Soporte";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
             // VentanaPrincipal
             // 

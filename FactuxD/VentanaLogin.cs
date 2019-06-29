@@ -41,7 +41,7 @@ namespace FactuxD
                 string cuenta = ds.Tables[0].Rows[0]["account"].ToString().Trim();
                 string contra = ds.Tables[0].Rows[0]["password"].ToString().Trim();
 
-                if(cuenta == txtNomAcc.Text.Trim() && contra == txtCont.Text.Trim())
+                if(cuenta == bunifuMaterialTextbox3.Text.Trim() && contra == bunifuMaterialTextbox4.Text.Trim())
                 {
                     if (Convert.ToBoolean(ds.Tables[0].Rows[0]["Status_admin"]) == true)
                     {
@@ -67,7 +67,7 @@ namespace FactuxD
             }
             catch (Exception )
             {
-                MessageBox.Show("La contraseña o el usuario son incorrctos...");
+                MessageBox.Show("La contraseña o el usuario son incorrectos...");
             }
 
 
@@ -114,6 +114,67 @@ namespace FactuxD
         }
 
         private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            //Utilidades.Ejecutar("Selec * FROM Clientes Where id=1");
+
+            try
+            {
+                string CMD = string.Format("Select * FROM Usuarios WHERE account='{0}' AND password='{1}'", bunifuMaterialTextbox3.Text.Trim(), bunifuMaterialTextbox4.Text.Trim());
+                DataSet ds = Utilidades.Ejecutar(CMD);
+
+                Codigo = ds.Tables[0].Rows[0]["Id_usuario"].ToString().Trim();
+
+                string cuenta = ds.Tables[0].Rows[0]["account"].ToString().Trim();
+                string contra = ds.Tables[0].Rows[0]["password"].ToString().Trim();
+
+                if (cuenta == bunifuMaterialTextbox3.Text.Trim() && contra == bunifuMaterialTextbox4.Text.Trim())
+                {
+                    if (Convert.ToBoolean(ds.Tables[0].Rows[0]["Status_admin"]) == true)
+                    {
+                        VentanaPrincipal venp = new VentanaPrincipal();
+                        this.Hide();
+                        venp.Show();
+                        //VentanaAdmin VenAd = new VentanaAdmin();
+                        //this.Hide();
+                        //VenAd.Show();
+                    }
+                    else
+                    {
+                        VentanaPrincipal venp = new VentanaPrincipal();
+                        this.Hide();
+                        venp.Show();
+                        //VentanaUser VenUs = new VentanaUser();
+                        //this.Hide();
+                        //VenUs.Show();
+
+                    }
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("La contraseña o el usuario son incorrectos...");
+            }
+
+
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            //this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void BunifuMaterialTextbox3_OnValueChanged_1(object sender, EventArgs e)
         {
 
         }

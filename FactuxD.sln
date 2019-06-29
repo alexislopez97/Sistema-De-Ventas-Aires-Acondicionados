@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiLibreria", "MiLibreria\Mi
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "instalador_clima", "instalador_clima\instalador_clima.vdproj", "{D6C52E81-A678-4B0A-88CF-A9A844C80B16}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Sistema_de_ventas", "Sistema_de_ventas\Sistema_de_ventas.vdproj", "{27397EF4-CF6F-404F-9369-42C64592A683}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SistemaVentas2", "SistemaVentas2\SistemaVentas2.vdproj", "{CEAF326F-D499-462B-A556-67CC4ABEA577}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{55E85FAE-EB82-4EA7-B495-87C6F038BF3D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D6C52E81-A678-4B0A-88CF-A9A844C80B16}.Debug|Any CPU.ActiveCfg = Debug
 		{D6C52E81-A678-4B0A-88CF-A9A844C80B16}.Release|Any CPU.ActiveCfg = Release
+		{27397EF4-CF6F-404F-9369-42C64592A683}.Debug|Any CPU.ActiveCfg = Debug
+		{27397EF4-CF6F-404F-9369-42C64592A683}.Release|Any CPU.ActiveCfg = Release
+		{CEAF326F-D499-462B-A556-67CC4ABEA577}.Debug|Any CPU.ActiveCfg = Debug
+		{CEAF326F-D499-462B-A556-67CC4ABEA577}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
